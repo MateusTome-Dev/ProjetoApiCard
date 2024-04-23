@@ -53,6 +53,7 @@ function cardsFood(data) {
         </div>
         `;
     main.appendChild(card);
+    
   });
 
   let number2 = 0;
@@ -63,13 +64,15 @@ function cardsFood(data) {
 
     var click = `card-content-${number2}`;
 
-    image.addEventListener("click", () => {
+    image.addEventListener('click', () => {
       if (document.getElementById(click).style.display === "flex") {
         document.getElementById(click).style.display = "none";
       } else{
         document.getElementById(click).style.display = "flex";
       }
     });
+
+
   });
 }
 
